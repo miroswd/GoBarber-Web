@@ -4,9 +4,14 @@ import GlobalStyle from './styles/global';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
 
+import { AuthProvider } from './hooks/AuthContext';
+
 const App: React.FC = () => (
   <>
-    <Signin />
+    {/** Todo componente dentro dele, vai ter a informação de autenticação */}
+    <AuthProvider>
+      <Signin />
+    </AuthProvider>
     <GlobalStyle />
   </>
 );
