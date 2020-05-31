@@ -9,7 +9,7 @@ import { IconBaseProps } from 'react-icons';
 import { FiAlertCircle } from 'react-icons/fi';
 import { useField } from '@unform/core'; // API pra web e mobile
 import { Container, Error } from './styles';
-import Tooltip from '../tooltip';
+// import Tooltip from '../tooltip';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
