@@ -1,4 +1,4 @@
-<h2 align="center">GoBarber</h2>
+<h2 align="center">GoBarber [Em desenvolvimento]</h2>
 <p align="center">Aplicação de agendamento de serviços, para uma barbearia. Projeto principal do Bootcamp GoStack.</p>
 
 <img src="https://github.com/miroswd/GoBarber-Web/blob/master/assets/logon.png"/>
@@ -26,4 +26,16 @@ yarn start
 
 ```bash
 sudo docker run --name gobarber -e POSTGRES_PASSWORD=suasenha -p 5432:5432 -d postgres # Caso a porta 5432 esteja ocupada, modificar de 5432:5432 para 5433:5432
+```
+- Criar uma database chamada <b>gostack_gobarber</b> 
+- Rodar as migrations
+
+```bash
+yarn typeorm migration:run
+```
+
+- Inicializar o projeto
+
+```bash
+yarn dev:server
 ```
